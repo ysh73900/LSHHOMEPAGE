@@ -1,0 +1,20 @@
+<div class="container text-center">
+  <h2 class="page-header">QR명함 생성 - {{ username }}</h2>
+  <br />
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput2" class="form-label"
+    >명함정보 | NameCard</label
+  >
+  <textarea
+    class="form-control"
+    id="exampleFormControlInput2"
+    rows="4"
+    disabled
+    >{{ card }}</textarea
+  >
+</div>
+<div class="qrcodebox">
+  <ngx-qrcode [elementType]="elementType" [value]="value" [width]="300">
+  </ngx-qrcode>
+</div>

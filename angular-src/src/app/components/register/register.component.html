@@ -1,0 +1,76 @@
+<section>
+  <div class="reg-main">
+    <h1 class="page-header">Register</h1>
+    <br />
+    <form (ngSubmit)="onRegisterSubmit()">
+      <div class="form-group">
+        <input
+          type="text"
+          [(ngModel)]="name"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail1"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail1"> 사용자 이름 | Name</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="email"
+          [(ngModel)]="email"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail2"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail2">이 메일 : Email address</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="text"
+          [(ngModel)]="username"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail3"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail3">아 이디 : Username</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="password"
+          [(ngModel)]="password1"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail4"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail4">패 스워드 : Password</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="password"
+          [(ngModel)]="password2"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail5"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail5"
+          >패 스워드 확인 : Confirm Password</label
+        >
+      </div>
+      <br />
+      <input type="submit" class="btn btn-primary" value="사용자 등록하기" />
+    </form>
+  </div>
+</section>
